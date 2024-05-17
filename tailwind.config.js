@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'highlight-white/5': 'inset 0 1px 0 0 #ffffff0d',
+      }
+    },
+  },
+  variants: {
+    extend: {
+      boxShadow: ['dark'],
+    },
   },
   plugins: [],
 }
