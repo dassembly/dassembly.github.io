@@ -2,11 +2,13 @@ import Flare from "./background/Flare";
 import Grid from "./background/Grid";
 import Team from "./Team";
 import Title from "./Title";
+import TopBar from "./TopBar";
 
 export default function App() {
   return (
     <div className="flex h-screen flex-col">
       <header className="relative h-3/5 bg-slate-50 dark:bg-[#0B1120]">
+        <TopBar />
         <Grid />
         <Flare />
         <Title />
