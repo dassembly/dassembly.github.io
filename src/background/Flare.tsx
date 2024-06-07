@@ -7,7 +7,7 @@ export default function Flare() {
         <img
           src={background}
           alt=""
-          className="hidden w-[90rem] max-w-none flex-none dark:block"
+          className="w-[90rem] max-w-none flex-none"
           decoding="async"
         />
       </div>

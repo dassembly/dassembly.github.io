@@ -29,14 +29,14 @@ const people: Person[] = [
 
 export default function Team() {
   return (
-    <section className="relative rounded-t-2xl px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-24 xl:py-28 2xl:px-28 2xl:py-32 dark:bg-slate-900">
-      <div className="absolute left-0 top-0 h-1/2 w-full rounded-t-2xl border-x-[1px] border-t-[1px] border-slate-800"></div>
+    <section className="relative rounded-t-2xl bg-white px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-24 xl:py-28 2xl:px-28 2xl:py-32 dark:bg-slate-900">
+      <div className="absolute left-0 top-0 h-1/2 w-full rounded-t-2xl border-x-[1px] border-t-[1px] dark:border-slate-800"></div>
       <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
             Meet the team
           </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-400">
+          <p className="mt-4 text-lg leading-8 text-slate-600 dark:text-gray-400">
             We&apos;re a dynamic duo who are passionate about what we do.
           </p>
         </div>

@@ -17,7 +17,10 @@ export type IconProps = {
 export default function Icon({ name, href }: IconProps) {
   return (
     <li>
-      <a href={href} className="text-gray-400 hover:text-gray-300">
+      <a
+        href={href}
+        className="text-slate-700 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-300"
+      >
         <span className="sr-only">X</span>
 
         <svg
