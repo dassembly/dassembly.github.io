@@ -7,15 +7,32 @@ export default function Title() {
   const [title, setTitle] = useState("");
 
   useEffect(() => {
+    let state = 0;
+    let initialBlinkCounter = 10;
     let index = 0;
     let finalBlinkCounter = 10;
     const interval = setInterval(() => {
-      if (index < FINAL_TITLE.length) {
-        index++;
-        setTitle(() => FINAL_TITLE.substring(0, index));
-      } else if (finalBlinkCounter-- <= 0) {
-        setShowBlinker(false);
-        clearInterval(interval);
+      switch (state) {
+        case 0:
+          if (initialBlinkCounter-- <= 0) {
+            state++;
+          }
+          break;
+        case 1:
+          if (index++ < FINAL_TITLE.length) {
+            setTitle(() => FINAL_TITLE.substring(0, index));
+          } else {
+            state++;
+          }
+          break;
+        case 2:
+          if (finalBlinkCounter-- <= 0) {
+            setShowBlinker(false);
+            state++;
+          }
+          break;
+        default:
+          clearInterval(interval);
       }
     }, 120);
     return () => clearInterval(interval);
