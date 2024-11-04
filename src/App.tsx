@@ -1,7 +1,7 @@
 import Flare from "./background/Flare";
 import Grid from "./background/Grid";
 import Team from "./Team";
-import Title from "./Title";
+import Title from "./title/Animated";
 import TopBar from "./TopBar";
 
 export default function App() {
