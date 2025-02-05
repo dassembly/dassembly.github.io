@@ -28,10 +28,10 @@ export default function Title() {
   }, []);
 
   return (
-    <section className="pb-32 pt-24">
+    <section className="pt-24 pb-32">
       <h1 className="ml1 text-center text-[3.5em] font-black dark:text-white">
-        <span className="relative inline-block pb-[0.15em] pr-[0.05em] pt-[0.1em]">
-          <span className="line absolute left-0 top-0 h-[3px] w-full origin-[0_0] bg-slate-900 opacity-0 dark:bg-white"></span>
+        <span className="relative inline-block pt-[0.1em] pr-[0.05em] pb-[0.15em]">
+          <span className="line absolute top-0 left-0 h-[3px] w-full origin-[0_0] bg-slate-900 opacity-0 dark:bg-white"></span>
           <span className="letters inline-block leading-[1em]">
             {TITLE.split("").map((letter, i) => (
               <span key={i} className="letter">

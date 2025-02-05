@@ -12,7 +12,7 @@ export default function App() {
         <Grid />
         <Flare />
         <Title />
-        <div className="absolute inset-x-0 bottom-0 top-0 flex w-full translate-y-1/2 transform justify-center">
+        <div className="absolute inset-x-0 top-0 bottom-0 flex w-full translate-y-1/2 transform justify-center">
           <Team />
         </div>
       </header>

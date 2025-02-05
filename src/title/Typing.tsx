@@ -39,11 +39,11 @@ export default function Title() {
   }, []);
 
   return (
-    <section className="pb-32 pt-24">
+    <section className="pt-24 pb-32">
       <h1 className="text-center text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white">
         {title}
         {showBlinker && (
-          <span className="inline-block w-0 animate-blink">|</span>
+          <span className="animate-blink inline-block w-0">|</span>
         )}
       </h1>
     </section>

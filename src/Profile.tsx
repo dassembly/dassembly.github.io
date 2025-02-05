@@ -9,13 +9,13 @@ export type Person = {
 
 export default function Profile({ person }: { person: Person }) {
   return (
-    <li className="m-1 rounded-2xl bg-slate-50 px-8 py-10 ring-1 ring-slate-900/5 dark:bg-gray-800 dark:shadow-highlight-white/5 dark:ring-0">
+    <li className="dark:shadow-highlight-white/5 m-1 rounded-2xl bg-slate-50 px-8 py-10 ring-1 ring-slate-900/5 dark:bg-gray-800 dark:ring-0">
       <img
         className="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
         src={person.imageUrl}
         alt="Avatar"
       />
-      <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-slate-900 dark:text-white">
+      <h3 className="mt-6 text-base leading-7 font-semibold tracking-tight text-slate-900 dark:text-white">
         {person.name}
       </h3>
       <p className="text-sm leading-6 text-slate-700 dark:text-gray-400">
