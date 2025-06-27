@@ -1,14 +1,12 @@
-import anime from "animejs/lib/anime.es.js";
+import { createTimeline } from "animejs";
 import { useEffect } from "react";
 
 const TITLE = "DASSEMBLY";
 
 export default function Title() {
   useEffect(() => {
-    anime
-      .timeline({ loop: false })
-      .add({
-        targets: ".ml1 .letter",
+    createTimeline({ loop: false })
+      .add(".ml1 .letter", {
         scale: [0.3, 1],
         opacity: [0, 1],
         translateZ: 0,
@@ -16,8 +14,7 @@ export default function Title() {
         duration: 600,
         delay: (_el, i) => 70 * (i + 1),
       })
-      .add({
-        targets: ".ml1 .line",
+      .add(".ml1 .line", {
         scaleX: [0, 1],
         opacity: [0.5, 1],
         easing: "easeOutExpo",
