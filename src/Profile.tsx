@@ -9,9 +9,9 @@ export type Person = {
 
 export default function Profile({ person }: { person: Person }) {
   return (
-    <li className="dark:shadow-highlight-white/5 m-1 rounded-2xl bg-slate-50 px-8 py-10 ring-1 ring-slate-900/5 dark:bg-gray-800 dark:ring-0">
+    <li className="dark:shadow-highlight-white/5 m-1 rounded-2xl bg-slate-50 px-8 py-8 ring-1 ring-slate-900/5 dark:bg-gray-800 dark:ring-0">
       <img
-        className="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
+        className="mx-auto h-40 w-40 rounded-full md:h-48 md:w-48"
         src={person.imageUrl}
         alt="Avatar"
       />

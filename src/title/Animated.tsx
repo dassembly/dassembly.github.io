@@ -29,7 +29,7 @@ export default function Title() {
   }, []);
 
   return (
-    <section className="pt-12 pb-12 sm:pt-24 sm:pb-20">
+    <section className="pt-10 pb-10 sm:pt-8 sm:pb-10">
       <h1 className="ml1 text-center text-4xl font-black sm:text-5xl lg:text-6xl dark:text-white">
         <span className="relative inline-block pt-[0.1em] pr-[0.05em] pb-[0.15em]">
           <span className="line absolute top-0 left-0 h-[3px] w-full origin-[0_0] bg-slate-900 opacity-0 dark:bg-white"></span>

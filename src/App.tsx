@@ -7,16 +7,16 @@ import TopBar from "./TopBar";
 export default function App() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="relative bg-slate-50 pb-36 sm:pb-40 dark:bg-[#0B1120]">
+      <header className="relative bg-slate-50 pb-32 dark:bg-[#0B1120]">
         <TopBar />
         <Grid />
         <Flare />
         <Title />
       </header>
-      <main className="relative z-10 -mt-28 flex justify-center px-4 sm:px-6 lg:px-8">
+      <main className="relative z-10 -mt-24 flex justify-center px-4 sm:-mt-28 sm:px-6 lg:px-8">
         <Team />
       </main>
-      <footer className="flex-1 bg-white py-12 text-slate-500 dark:bg-slate-900 dark:text-slate-400"></footer>
+      <footer className="flex-1 bg-white py-6 text-slate-500 dark:bg-slate-900 dark:text-slate-400"></footer>
     </div>
   );
 }
