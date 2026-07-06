@@ -29,9 +29,8 @@ const people: Person[] = [
 
 export default function Team() {
   return (
-    <section className="relative rounded-t-2xl bg-white px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-24 xl:py-28 2xl:px-28 2xl:py-32 dark:bg-slate-900">
-      <div className="absolute top-0 left-0 h-1/2 w-full rounded-t-2xl border-x-[1px] border-t-[1px] dark:border-slate-800"></div>
-      <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
+    <section className="w-full max-w-4xl rounded-2xl bg-white px-4 py-10 shadow-xl ring-1 ring-slate-900/10 sm:px-8 sm:py-12 lg:px-12 lg:py-16 dark:bg-slate-900 dark:shadow-none dark:ring-slate-800">
+      <div className="text-center">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
             Meet the team
@@ -42,7 +41,7 @@ export default function Team() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8"
+          className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-6 sm:mt-12 sm:grid-cols-2 lg:gap-8"
         >
           {people.map((person) => (
             <Profile key={person.name} person={person} />
