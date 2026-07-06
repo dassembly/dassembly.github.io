@@ -35,7 +35,7 @@ export default function Title() {
           <span className="line absolute top-0 left-0 h-[3px] w-full origin-[0_0] bg-slate-900 opacity-0 dark:bg-white"></span>
           <span className="letters inline-block leading-[1em]">
             {TITLE.split("").map((letter, i) => (
-              <span key={i} className="letter">
+              <span key={i} className="letter inline-block opacity-0">
                 {letter}
               </span>
             ))}
