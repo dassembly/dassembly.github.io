@@ -12,7 +12,7 @@ export default function Title() {
         translateZ: 0,
         easing: "easeOutExpo",
         duration: 600,
-        delay: (_el, i) => 70 * (i + 1),
+        delay: (_el: unknown, i: number = 0) => 70 * (i + 1),
       })
       .add(".ml1 .line", {
         scaleX: [0, 1],
@@ -20,7 +20,8 @@ export default function Title() {
         easing: "easeOutExpo",
         duration: 700,
         offset: "-=875",
-        delay: (_el, i, l) => 80 * (l - i),
+        delay: (_el: unknown, i: number = 0, l: unknown[] = []) =>
+          80 * (l.length - i),
       });
   }, []);
 
